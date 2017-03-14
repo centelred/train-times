@@ -26,7 +26,68 @@
     </div>
     <!-- End Top Bar -->
     <hr>
+    <!--start train times section-->
+    
+    <!--table section-->
+    <table align="center" id="schedule">
+  <thead>
+    <tr>
+      <th width="100">Train Name</th>
+      <th width="100">Destination</th>
+      <th width="100">Frequency (mins)</th>
+      <th width="100">Next Arrival</th>
+      <th width="100">Minutes Away</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>San Sebastian</td>
+      <td>Line has been limited to one car per trip.</td>
+      <td>1440</td>
+      <td>17:50</td>
+      <td class="mins">00:00</td>
+    </tr>
+    <tr>
+      <td>El Rio Norte</td>
+      <td>No Longer in service. Decommissioned.</td>
+      <td>Out of Service</td>
+      <td>00:00</td>
+      <td class="mins">00:00</td>
+    </tr>
+  </tbody>
+</table>
 
+<!--end table section-->
+<hr>
+
+<div class="row input-field">    
+    <form>
+  <label>Select Train
+    <select>
+      <option value="rioNort">El Rio Norte</option>
+      <option value="sanSeb">San Sebastian</option>
+      <option value="johnGalt">John Galt</option>
+      <option value="apollo">Apollo</option>
+    </select>
+  </label>
+     <label>
+    First Train Time
+    <input type="number" placeholder="00:00" value="00:00">
+  </label>
+    
+  <label id="destiny">Destination
+    <input type="text" placeholder="Where are we heading?" aria-describedby="exampleHelpText">
+  </label>
+  <p class="help-text" id="exampleHelpText">City, State, Zip</p>
+
+
+  
+  <div class="input-group">
+    <a class="input-group-button button">Submit</a>
+  </div>
+</form>
+</div>
+   
 
     <!--begin bottom section-->
     <hr>

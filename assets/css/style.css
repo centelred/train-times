@@ -12,3 +12,12 @@ li.menu-text{
     font-family: 'Kaushan Script', cursive;
     font-size:25px;
 }
+
+
+.container {
+    margin:0 auto;
+}
+
+.input-field {
+    width:65%;
+}
