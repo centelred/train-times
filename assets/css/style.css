@@ -1,15 +1,13 @@
 body {
-    font-family: 'Cinzel', serif;
     background-image:url('../images/tweed.png');
 }
 
-h1, h3 {
+body, h1, h3, li.menu-text {
     font-family: 'Cinzel', serif;        
 }
 
 
 li.menu-text{
-    font-family: 'Kaushan Script', cursive;
     font-size:25px;
 }
 
@@ -19,5 +17,5 @@ li.menu-text{
 }
 
 .input-field {
-    width:65%;
+    width:50%;
 }

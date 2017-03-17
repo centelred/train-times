@@ -1,110 +1,101 @@
 <!doctype html>
-<html class="no-js" lang="en">
-  <head>
+<html>
+
+<head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Taggart Transcontinental</title>
     <link rel="stylesheet" href="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.min.css">
+    <link rel="stylesheet" href="assets/css/responsive-tables.css">
     <link rel="stylesheet" href="assets/css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Cinzel|Kaushan+Script" rel="stylesheet">
-  </head>
-  <body>
-    
+    <link href="https://fonts.googleapis.com/css?family=Cinzel|Kaushan+Script" rel="stylesheet"> </head>
+
+<body>
     <!-- Start Top Bar -->
     <div class="top-bar">
-      <div class="top-bar-left">
-        <ul class="menu">
-          <li class="menu-text"><a class="menu-text" href="index.html">Taggart Transcontinental</a></li>
-        </ul>
-      </div>
-      <div class="top-bar-right">
-        <ul class="menu">
-          <li><a href="http://www.conservapedia.com/John_Galt" target="_blank">About</a></li>
-          <li><a href="traintimes.html" target="_blank">Train Times</a></li>
-        </ul>
-      </div>
+        <div class="top-bar-left">
+            <ul class="menu">
+                <li class="menu-text"><a class="menu-text" href="index.html">Taggart Transcontinental</a></li>
+            </ul>
+        </div>
+        <div class="top-bar-right">
+            <ul class="menu">
+                <li><a href="http://www.conservapedia.com/John_Galt" target="_blank">About</a></li>
+                <li><a href="traintimes.html" target="_blank">Train Times</a></li>
+            </ul>
+        </div>
     </div>
     <!-- End Top Bar -->
     <hr>
     <!--start train times section-->
-    
     <!--table section-->
     <div class="row column" align="center">
-    
-    <table id="schedule">
-  <thead>
-    <tr>
-      <th width="100">Train Name</th>
-      <th width="100">Destination</th>
-      <th width="100">Frequency (mins)</th>
-      <th width="100">Next Arrival</th>
-      <th width="100">Minutes Away</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>San Sebastian</td>
-      <td>Line has been limited to one car per trip.</td>
-      <td>1440</td>
-      <td>17:50</td>
-      <td class="mins">00:00</td>
-    </tr>
-    <tr>
-      <td>El Rio Norte</td>
-      <td>No Longer in service. Decommissioned.</td>
-      <td>Out of Service</td>
-      <td>00:00</td>
-      <td class="mins">00:00</td>
-    </tr>
-  </tbody>
-</table>
-      </div>
-<!--end table section-->
-<hr>
+        <table id="schedule">
+            <thead>
+                <tr>
+                    <th width="100">Train Name</th>
+                    <th width="100">Destination</th>
+                    <th width="90">First Train</th>
+                    <th width="80">Frequency</th>
+                    <th width="80">Minutes Away</th>
+                    <th width="80">Next Arrival</th>
 
-<div class="row input-field">    
-    <form>
-  <label>Select Train
-    <select>
-      <option value="rioNort">El Rio Norte</option>
-      <option value="sanSeb">San Sebastian</option>
-      <option value="johnGalt">John Galt</option>
-      <option value="apollo">Apollo</option>
-    </select>
-  </label>
-     <label>
-    First Train Time
-    <input type="number" placeholder="00:00" value="00:00">
-  </label>
-    
-  <label id="destiny">Destination
-    <input type="text" placeholder="Where are we heading?" aria-describedby="exampleHelpText">
-  </label>
-  <p class="help-text" id="exampleHelpText">City, State, Zip</p>
-
-
-  
-  <div class="input-group">
-    <a class="input-group-button button">Submit</a>
-  </div>
-</form>
-
-   
-
-    <!--begin bottom section-->
-    <hr>
-
-    <div class="row column">
-      <div class="callout primary text-center">
-        <h3>Really Great Deals</h3>
-          <p>We have all of the railroad you will never need.</p><sub>who is john galt?</sub>
-      </div>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="mins"></td>
+                </tr>
+            </tbody>
+        </table>
     </div>
-    
-    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-    <script src="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.js"></script>
-    <script>
-      $(document).foundation();
-    </script>
-  </body>
+    <!--end table section-->
+    <hr>
+    <div class="row input-field">
+        <form>
+            <label id="train-name">Select Train
+                <select>
+                    <option value="rioNort">Rio Norte</option>
+                    <option value="sanSeb">San Sebastian</option>
+                    <option value="johnGalt">John Galt</option>
+                    <option value="mckenzie">McKenzie</option>
+                    <option value="columbia">Columbia</option>
+                    <option value="tocantin">Tocantin</option>
+                    <option value="apollo">Apollo</option>
+                </select>
+            </label>
+            <label>Add Train
+                <input type="text" id="new-train" placeholder="New"> </label>
+            <label>Destination
+                <input id="destiny" type="text" placeholder="Where are we heading?" aria-describedby="exampleHelpText"> </label>
+            <label> First Train Time (HH:mm)
+                <input id="first-train" type="number" placeholder="(HH:mm)"> </label>
+            <label>Frequency
+                <input id="frequency" type="text" placeholder="mins"> </label>
+            <div class="input-group"> <a class="input-group-button button">Submit</a> </div>
+        </form>
+        <!--begin bottom section-->
+        <hr>
+        <div class="row column">
+            <div class="callout primary text-center">
+                <h3>Really Great Deals</h3>
+                <p>We have all of the railroad you will never need.</p><sub>who is john galt?</sub> </div>
+        </div>
+        <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/3.7.1/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/3.7.1/firebase-database.js"></script>
+        <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+        <script src="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.js"></script>
+        <script src="assets/javascript/responsive-tables.js"></script>
+        <script src="assets/javascript/times.js"></script>
+        <script>
+            $(document).foundation();
+        </script>
+</body>
+
 </html>
